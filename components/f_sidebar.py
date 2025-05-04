@@ -5,11 +5,11 @@ import dash_bootstrap_components as dbc
 # the style arguments for the sidebar. We use position:fixed and a fixed width
 SIDEBAR_STYLE = {
     "position": "fixed",
-    "top": 72,
+    "top": "72px",
     "left": 12,
     "bottom": 0,
     "width": "13rem",
-    "height": "100%",
+    "height": "calc(100vh - 72px)",
     "z-index": 1,
     "overflow-x": "hidden",
     "transition": "all 0.5s",
@@ -20,11 +20,11 @@ SIDEBAR_STYLE = {
 
 SIDEBAR_HIDEN = {
     "position": "fixed",
-    "top": 72,
+    "top": "72px",
     "left": "-13rem",
     "bottom": 0,
     "width": "13rem",
-    "height": "100%",
+    "height": "calc(100vh - 72px)",
     "z-index": 1,
     "overflow-x": "hidden",
     "transition": "all 0.5s",

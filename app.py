@@ -6,8 +6,9 @@ app = dash.Dash(
     __name__, use_pages=True, external_stylesheets=[dbc.themes.FLATLY]
 )
 
-for page in dash.page_registry.values():
-    print(page['path'])
+#
+# for page in dash.page_registry.values():
+#     print(page['path'])
 
 header = dbc.Navbar(
     dbc.Container(
@@ -33,6 +34,7 @@ header = dbc.Navbar(
     ),
     color="primary",
     dark=True,
+    sticky="top",
 )
 
 app.layout = dbc.Container([header,dash.page_container], fluid=True)
