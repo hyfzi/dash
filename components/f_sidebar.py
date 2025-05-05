@@ -49,6 +49,7 @@ CONTENT_STYLE1 = {
     "background-color": "#f8f9fa",
 }
 
+
 def f_sidebar():
     sidebar = html.Div(
         [

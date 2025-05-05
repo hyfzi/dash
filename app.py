@@ -37,7 +37,7 @@ header = dbc.Navbar(
     sticky="top",
 )
 
-app.layout = dbc.Container([header,dash.page_container], fluid=True)
+app.layout = dbc.Container([header, dash.page_container], fluid=True)
 
 if __name__ == '__main__':
     app.run(debug=True)
